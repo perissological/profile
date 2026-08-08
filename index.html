@@ -23,7 +23,7 @@
 </head>
 <body class="min-h-full flex flex-col">
   <div class="relative min-h-screen bg-[#070708] text-neutral-100 overflow-x-clip antialiased">
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:4rem_4re[...]
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
     <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-[#070708]/95 backdrop-blur-md">
       <div class="relative flex items-center justify-center">
@@ -46,12 +46,12 @@
       <section id="hero" class="relative z-10 flex min-h-screen flex-col md:flex-row items-center justify-center md:justify-between px-8 md:px-20 gap-12 md:gap-0 pt-20 md:pt-0">
         <div class="flex flex-col gap-5 shrink-0 text-center md:text-left select-none animate-blur-in">
           <p class="font-sans text-xs tracking-[0.3em] text-neutral-500 uppercase">Developer</p>
-          <h1 class="font-serif text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight leading-[1.25] pb-4 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 via-neutral-100 to-neut[...]
+          <h1 class="font-serif text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight leading-[1.25] pb-4 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 via-neutral-100 to-neutral-700">perissological</h1>
           <p class="font-sans text-sm md:text-base text-neutral-500 max-w-sm leading-relaxed mx-auto md:mx-0">Redundancy, but useful.</p>
         </div>
         <div class="relative z-0 shrink-0 group animate-blur-in [animation-delay:200ms]">
           <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/10 to-purple-500/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-          <a href="https://discord.com/users/630438858445815812" target="_blank" rel="noopener noreferrer" class="relative block w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden ring-2 ring-[...]
+          <a href="https://discord.com/users/630438858445815812" target="_blank" rel="noopener noreferrer" class="relative block w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden ring-2 ring-white/10">
             <img src="https://cdn.discordapp.com/avatars/630438858445815812/58457fc43c55b0e1a36901f394ee6e7f.png?size=1024" alt="Profile" class="w-full h-full object-cover rounded-full">
           </a>
         </div>
@@ -61,23 +61,17 @@
         <h2 class="mb-4 text-center font-sans text-xs tracking-[0.3em] text-neutral-600 uppercase">What I work with</h2>
         <h2 class="mb-16 text-center font-serif text-3xl font-bold text-neutral-100">Skills</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl w-full">
-          <div class="relative rounded-2xl border border-white/5 bg-neutral-900/20 p-6 flex flex-col gap-4 hover:border-white/10 hover:bg-neutral-900/30 hover:-translate-y-1 shadow-lg shadow-black/20 transition-all duration-300">
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full flex items-center justify-center bg-neutral-800/50 text-neutral-300 shrink-0">
-                <img src="https://cdn.modrinth.com/data/xFNYAvMk/36620079105b8ee2ec539b24b7d2fde1a6692ccc_96.webp" alt="Skript" class="w-8 h-8">
-              </div>
-              <h3 class="font-sans text-xl font-semibold text-neutral-100">Skript</h3>
+          <div class="skill-box">
+            <div class="skill-icon">
+              <img src="https://cdn.modrinth.com/data/xFNYAvMk/36620079105b8ee2ec539b24b7d2fde1a6692ccc_96.webp" alt="Skript" class="w-8 h-8">
             </div>
-            <p class="font-sans text-sm text-neutral-400">Minecraft server scripting</p>
+            <span class="skill-label">Skript</span>
           </div>
-          <div class="relative rounded-2xl border border-white/5 bg-neutral-900/20 p-6 flex flex-col gap-4 hover:border-white/10 hover:bg-neutral-900/30 hover:-translate-y-1 shadow-lg shadow-black/20 transition-all duration-300">
-            <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full flex items-center justify-center bg-neutral-800/50 text-neutral-300 shrink-0">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-8 h-8">
-              </div>
-              <h3 class="font-sans text-xl font-semibold text-neutral-100">Java</h3>
+          <div class="skill-box">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-8 h-8">
             </div>
-            <p class="font-sans text-sm text-neutral-400">Backend development</p>
+            <span class="skill-label">Java</span>
           </div>
         </div>
       </section>
@@ -86,38 +80,38 @@
         <h2 class="mb-4 text-center font-sans text-xs tracking-[0.3em] text-neutral-600 uppercase">My Work</h2>
         <h2 class="mb-16 text-center font-serif text-3xl font-bold text-neutral-100">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
-          <div class="relative rounded-2xl border border-white/5 bg-neutral-900/20 p-6 flex flex-col gap-4 hover:border-white/10 hover:bg-neutral-900/30 hover:-translate-y-1 shadow-lg shadow-black[...]
+          <div class="relative rounded-2xl border border-white/5 bg-neutral-900/20 p-6 flex flex-col gap-4 hover:border-white/10 hover:bg-neutral-900/30 hover:-translate-y-1 shadow-lg shadow-black/20 transition-all duration-300">
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 rounded-full flex items-center justify-center bg-neutral-800/50 text-neutral-300 shrink-0">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"><path d="M257.744 20.232c-104.313 0-157.183[...]
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"><path d="M257.744 20.232c-104.313 0-157.183 52.869-157.183 157.183v81.771h235.705v26.581H100.561v156.835h-30.656V100.415c0-128.315 74.269-202.582 188.499-202.582 50.188 0 88.789 9.717 104.184 18.515v29.894z"/></svg>
               </div>
-              <h3 class="font-sans text-xl font-semibold text-neutral-100">V</h3>
+              <h3 class="font-sans text-xl font-semibold text-neutral-100">KrakenMC</h3>
             </div>
-            <p class="font-sans text-sm text-neutral-300 leading-relaxed flex-grow">KrakenMC is a high-performance Rust-based Minecraft server engine designed for low latency and high throughput. [...]
+            <p class="font-sans text-sm text-neutral-300 leading-relaxed flex-grow">KrakenMC is a high-performance Rust-based Minecraft server engine designed for low latency and high throughput.</p>
             <div class="mt-4">
-              <a href="https://github.com/itarqos5/KrakenMC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-blue-400 hover:text-blue-300 bg-blue[...]
+              <a href="https://github.com/itarqos5/KrakenMC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-medium text-blue-400 hover:text-blue-300 bg-blue-500/10 px-4 py-2 rounded-full">View on GitHub</a>
             </div>
           </div>
-          <div class="relative rounded-2xl border border-white/5 bg-neutral-900/20 p-6 flex flex-col gap-4 hover:border-white/10 hover:bg-neutral-900/30 hover:-translate-y-1 shadow-lg shadow-black[...]
+          <div class="relative rounded-2xl border border-white/5 bg-neutral-900/20 p-6 flex flex-col gap-4 hover:border-white/10 hover:bg-neutral-900/30 hover:-translate-y-1 shadow-lg shadow-black/20 transition-all duration-300">
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 rounded-full flex items-center justify-center bg-neutral-800/50 text-neutral-300 shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"[...]
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
               </div>
               <h3 class="font-sans text-xl font-semibold text-neutral-100">CalaDNS</h3>
             </div>
-            <p class="font-sans text-sm text-neutral-300 leading-relaxed flex-grow">CalaDNS is a lightweight, open-source extension for the Calagopus game server management panel that gives playe[...]
+            <p class="font-sans text-sm text-neutral-300 leading-relaxed flex-grow">CalaDNS is a lightweight, open-source extension for the Calagopus game server management panel that gives players more control.</p>
             <div class="mt-4">
               <span class="inline-flex items-center text-xs font-medium text-neutral-500 bg-neutral-800/30 px-4 py-2 rounded-full">Unavailable yet</span>
             </div>
           </div>
-          <div class="relative rounded-2xl border border-white/5 bg-neutral-900/20 p-6 flex flex-col gap-4 hover:border-white/10 hover:bg-neutral-900/30 hover:-translate-y-1 shadow-lg shadow-blac[...]
+          <div class="relative rounded-2xl border border-white/5 bg-neutral-900/20 p-6 flex flex-col gap-4 hover:border-white/10 hover:bg-neutral-900/30 hover:-translate-y-1 shadow-lg shadow-black/20 transition-all duration-300">
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 rounded-full flex items-center justify-center bg-neutral-800/50 text-neutral-300 shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round[...]
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
               </div>
               <h3 class="font-sans text-xl font-semibold text-neutral-100">Dormant Servers</h3>
             </div>
-            <p class="font-sans text-sm text-neutral-300 leading-relaxed flex-grow">Dormant Servers is an open-source, high-performance extension for Calagopus that eliminates a massive problem f[...]
+            <p class="font-sans text-sm text-neutral-300 leading-relaxed flex-grow">Dormant Servers is an open-source, high-performance extension for Calagopus that eliminates a massive problem for server owners.</p>
             <div class="mt-4">
               <span class="inline-flex items-center text-xs font-medium text-neutral-500 bg-neutral-800/30 px-4 py-2 rounded-full">Unavailable yet</span>
             </div>
